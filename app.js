@@ -11,6 +11,6 @@ app.get('/hello', function(req, res) {
      // res.end();
 });
 
-app.listen(80, function(){
+app.listen(process.env.PORT || 3000, function(){
 	console.log("Server started at port 3000");
 });
